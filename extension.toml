@@ -1,0 +1,20 @@
+id = "cyg"
+name = "CYG"
+version = "0.1.0"
+schema_version = 1
+description = "CYG deterministic simulation schema support: syntax highlighting, outline, and the CYG language server."
+authors = ["ananddub"]
+repository = "https://github.com/ananddub/cyg-zed"
+languages = ["languages/cyg"]
+
+[lib]
+kind = "Rust"
+version = "0.7.0"
+
+[grammars.cyg]
+repository = "https://github.com/ananddub/tree-sitter-cyg"
+rev = "98e4c5351aa0b150b1ccda03ab9daa4a74a8166b"
+
+[language_servers.cyg-lsp]
+name = "CYG Language Server"
+languages = ["CYG"]
